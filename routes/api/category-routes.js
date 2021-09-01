@@ -55,14 +55,12 @@ router.put('/:id', (req, res) => {
       category_name: req.body.category_name
     },
     {
-      // Gets the books based on the isbn given in the request parameters
       where: {
         id: req.params.id,
       },
     }
   )
     .then((updatedCategory) => {
-      // Sends the updated book as a json response
       res.json(updatedCategory);
     })
     .catch((err) => res.json(err));
