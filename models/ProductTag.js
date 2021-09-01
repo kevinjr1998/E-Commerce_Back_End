@@ -20,7 +20,6 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       //references tag(id)
     }
-    // define columns
   },
   {
     sequelize,
